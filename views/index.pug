@@ -21,10 +21,29 @@ block content
 
       form(action="/create", method="POST", enctype="multipart/form-data")
         label Fields marked with <span>*</span> are required.
-        div(class="input-group")
-          label(for="devices") Devices... TBD
-            span &nbsp;*
-          input(id="devices", type="text", name="devices", required)
+        h2 What kind of devices do you have connected to Firefox Sync? Please list all of the connected devices.
+        div(id="devices")
+          div(class="input-group")
+            label(for="multiple-devicesOS-0") Device 1 - Operating System
+              span &nbsp;*
+            select(id="multiple-devicesOS-0", name="multiple-devicesOS-0", required)
+              option(value="", selected, disabled) Please select your Operating System
+              option(value="Desktop - Windows") Desktop - Windows
+              option(value="Desktop - macOS") Desktop - macOS
+              option(value="Desktop - Linux") Desktop - Linux
+              option(value="Phone - Android") Phone - Android
+              option(value="Phone - iOS") Phone - iOS
+              option(value="Phone - Other") Phone - Other
+              option(value="Tablet - Android") Tablet - Android
+              option(value="Tablet - iOS") Tablet - iOS
+              option(value="Tablet - Other") Tablet - Other
+          div(class="input-group")
+            label(for="multiple-devicesVersion-0") Device 1 - Firefox Version
+              span &nbsp;*
+            input(id="multiple-devicesVersion-0", type="text", name="multiple-devicesVersion-0", required)
+        button(id="add-device") Add device
+
+        h2.big-padding-top Issue Description
         div(class="input-group")
           label(for="type") Issue Type
             span &nbsp;*
@@ -34,7 +53,6 @@ block content
             option(value="Localization Issue - Text not appearing correctly in your language") Localization Issue - Text not appearing correctly in your language
             option(value="Functional (doesn’t behave as expected)") Functional (doesn’t behave as expected)
             option(value="Other") Other
-        h2 Issue Description
         div(class="input-group")
           label(for="reproduce") <strong>Steps to reproduce&nbsp;<span>*</span></strong> - Write down everything you did immediately before you arrived at the bug as clearly as possible
           textarea(name="reproduce", required, placeholder="1) Did ...\n2) Clicked on ...\n3) etc..")
