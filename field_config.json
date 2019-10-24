@@ -1,19 +1,7 @@
 {
-  "fenix": {
-    "id": 100,
-    "content": "**Fenix Version:** ",
-    "required": true,
-    "pattern": ".+"
-  },
-  "device": {
+  "devices": {
     "id": 200,
     "content": "**Device:** ",
-    "required": true,
-    "pattern": ".+"
-  },
-  "android": {
-    "id": 300,
-    "content": "**Android Version:** ",
     "required": true,
     "pattern": ".+"
   },
@@ -22,11 +10,6 @@
     "content": "**Issue Type:** ",
     "required": true,
     "pattern": ".+"
-  },
-  "upcomingfeature": {
-    "id": 1000,
-    "heading": true,
-    "content": "## Wish for an upcoming feature"
   },
   "reproduce": {
     "id": 600,
@@ -48,12 +31,6 @@
     "content": "## Actual Behavior",
     "required": true,
     "pattern": ".+"
-  },
-  "otherbrowser": {
-    "id": 550,
-    "content": "**Tried in other browser**: ",
-    "required": true,
-    "pattern": "^(☒|☐)$"
   },
   "screenshot": {
     "id": 900,

@@ -17,21 +17,14 @@ block content
         p We're sorry.
 
     .form-container
-      h1 Report a Firefox Preview bug
+      h1 Report a Firefox Sync bug
 
       form(action="/create", method="POST", enctype="multipart/form-data")
         label Fields marked with <span>*</span> are required.
         div(class="input-group")
-          label(for="fenix") Firefox Preview Version&nbsp;<span>*</span><br><span class="field-note">(please adjust to value found in "Settings -> About Firefox Preview" if you are filing this issue outside of Firefox Preview)</span>
-          input(id="fenix", type="text", name="fenix", required, placeholder="e.g. 1.0.1915 (Build #10981206)")
-        div(class="input-group")
-          label(for="device") What Android device are you using?
+          label(for="devices") Devices... TBD
             span &nbsp;*
-          input(id="device", type="text", name="device", required, placeholder="e.g. Samsung S10, Google Pixel 2, Motorola G7")
-        div(class="input-group")
-          label(for="android") What Android Version are you using?
-            span &nbsp;*
-          input(id="android", type="text", name="android", required, placeholder="Android 9")
+          input(id="devices", type="text", name="devices", required)
         div(class="input-group")
           label(for="type") Issue Type
             span &nbsp;*
@@ -39,18 +32,9 @@ block content
             option(value="", selected, disabled) Select Type...
             option(value="Crash") Crash
             option(value="Localization Issue - Text not appearing correctly in your language") Localization Issue - Text not appearing correctly in your language
-            option(value="Visual (User Interface)") Visual (User Interface)
-            option(value="Non functional (Performance issues / slowness / loading)") Non functional (Performance issues / slowness / loading)
             option(value="Functional (doesn’t behave as expected)") Functional (doesn’t behave as expected)
-            option(value="Android app related (bugs not inside the browser)") Android app related (bugs not inside the browser)
             option(value="Other") Other
-        .big-padding
-          h2 Did you find a Web Compatibility bug?
-          p The website you’re visiting has a bug in Firefox but not in another browser? File your bug <a href="https://webcompat.com">here</a>.
         h2 Issue Description
-        div(class="input-group")
-          label(for="upcomingfeature") Is there a feature you would like to see in the upcoming Firefox for Android release? Let us know here!
-          textarea(name="upcomingfeature")
         div(class="input-group")
           label(for="reproduce") <strong>Steps to reproduce&nbsp;<span>*</span></strong> - Write down everything you did immediately before you arrived at the bug as clearly as possible
           textarea(name="reproduce", required, placeholder="1) Did ...\n2) Clicked on ...\n3) etc..")
@@ -60,16 +44,6 @@ block content
         div(class="input-group")
           label(for="actual") <strong>Actual behavior&nbsp;<span>*</span></strong> - What was the actual result, what did the browser actually do?
           textarea(name="actual", required)
-        div(class="input-group")
-          label Did you try this in another browser?
-            span &nbsp;*
-          .choice-row
-            .choice
-              label(for="otherbrowser-yes") Yes
-              input(id="otherbrowser-yes", name="otherbrowser", type="radio", value="yes")
-            .choice
-              label(for="otherbrowser-no") No
-              input(id="otherbrowser-no", name="otherbrowser", type="radio", value="no", checked)
         div(class="input-group")
           label(for="screenshot") Add a screenshot of what you see
           input(id="screenshot", type="file", accept="image/*", name="screenshot")
