@@ -8,7 +8,6 @@ Campaign Bug Reporting page for the upcoming Syncfest Campaign led by the Open I
 
 * First install [Docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
 * Create a repository to hold the submitted issues
-* Create a "triage" label for issues in that repository
 * Create a personal access token for your GitHub user
 
 ### Starting
