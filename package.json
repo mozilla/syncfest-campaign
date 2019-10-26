@@ -1,6 +1,6 @@
 {
   "name": "mozilla-syncfest-campaign",
-  "version": "0.2.3",
+  "version": "0.0.1",
   "scripts": {
     "start": "DEBUG=mozilla-syncfest-campaign* node index.js",
     "start:docker": "docker-compose up"
