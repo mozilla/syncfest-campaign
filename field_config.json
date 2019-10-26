@@ -1,12 +1,10 @@
 {
   "multiple-devicesOS": {
-    "id": 1000,
     "content": "\n**Device OS:** ",
     "required": true,
     "pattern": ".+"
   },
   "multiple-devicesVersion": {
-    "id": 1000,
     "content": "**Device Version:** ",
     "required": true,
     "pattern": ".+"

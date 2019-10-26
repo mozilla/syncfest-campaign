@@ -17,7 +17,7 @@ function addDeviceFormFields(container) {
   osContainer.classList.add('input-group');
 
   const osLabel = document.createElement('label');
-  const osKey = `multiple-devicesOS-${devicesIndex}`;
+  const osKey = `${devicesIndex}-multiple-devicesOS`;
   osLabel.setAttribute('for', osKey);
   osLabel.setAttribute('name', osKey);
   osLabel.setAttribute('required', true);
@@ -87,7 +87,7 @@ function addDeviceFormFields(container) {
   versionContainer.classList.add('input-group');
 
   const versionLabel = document.createElement('label');
-  const versionKey = `multiple-devicesVersion-${devicesIndex}`;
+  const versionKey = `${devicesIndex}-multiple-devicesVersion`;
   versionLabel.setAttribute('for', versionKey);
   versionLabel.textContent = `Device ${devicesIndex + 1} - Firefox Version`;
 
