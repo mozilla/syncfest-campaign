@@ -2,8 +2,7 @@
   "name": "mozilla-syncfest-campaign",
   "version": "0.0.1",
   "scripts": {
-    "start": "DEBUG=mozilla-syncfest-campaign* node index.js",
-    "start:docker": "docker-compose up"
+    "start": "DEBUG=mozilla-syncfest-campaign* node index.js"
   },
   "dependencies": {
     "@octokit/rest": "^16.34.0",
