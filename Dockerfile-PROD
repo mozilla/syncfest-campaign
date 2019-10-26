@@ -8,4 +8,4 @@ RUN npm ci
 
 EXPOSE 4000
 
-CMD ["npm", "run", "start:server"]
+CMD ["npm", "run", "start"]
