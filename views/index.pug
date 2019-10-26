@@ -23,9 +23,14 @@ block content
         label Fields marked with <span>*</span> are required.
         h2 What kind of devices do you have connected to Firefox Sync? Please list all of the connected devices.
         div(id="devices")
-        button(id="add-device", type="button") Add device
+        button(id="add-device", type="button") Add additional device
 
         h2.big-padding-top Issue Description
+        div(class="input-group")
+          label(for="device") On which device does your issue occur?
+            span &nbsp;*
+          select(id="device", name="device", required)
+            option(value="", disabled) Select Device...
         div(class="input-group")
           label(for="type") Issue Type
             span &nbsp;*

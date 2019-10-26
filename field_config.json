@@ -1,7 +1,7 @@
 {
   "multiple-devicesOS": {
     "id": 1000,
-    "content": "**Device OS:** ",
+    "content": "\n**Device OS:** ",
     "required": true,
     "pattern": ".+"
   },
@@ -12,8 +12,14 @@
     "pattern": ".+"
   },
   "type": {
-    "id": 500,
+    "id": 100,
     "content": "**Issue Type:** ",
+    "required": true,
+    "pattern": ".+"
+  },
+  "device": {
+    "id": 200,
+    "content": "**Affected Device:** ",
     "required": true,
     "pattern": ".+"
   },
@@ -44,7 +50,7 @@
     "content": "## Screenshot"
   },
   "github": {
-    "id": 550,
+    "id": 300,
     "content": "**GitHub Username**: "
   }
 }

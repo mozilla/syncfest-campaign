@@ -107,5 +107,17 @@ function addDeviceFormFields(container) {
 
   container.appendChild(versionContainer);
 
+  const affectedDeviceSelect = document.querySelector('#device');
+  const deviceOption = document.createElement('option');
+  const description = `Device ${devicesIndex + 1}`;
+  deviceOption.value = description;
+  deviceOption.textContent = description;
+
+  if (devicesIndex === 0) {
+    deviceOption.setAttribute('selected', true);
+  }
+
+  affectedDeviceSelect.appendChild(deviceOption);
+
   devicesIndex = devicesIndex + 1;
 }
