@@ -187,6 +187,10 @@ footer a {
   text-decoration: underline;
 }
 
+footer a:hover {
+  color: #fff;
+}
+
 footer ul {
   list-style: none;
 }
