@@ -9,9 +9,9 @@
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "formidable": "^1.2.1",
+    "formidable": "^1.2.2",
     "morgan": "^1.9.1",
     "pug": "^2.0.4",
-    "uuid": "^3.3.3"
+    "uuid": "^7.0.1"
   }
 }
